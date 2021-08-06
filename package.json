@@ -1,0 +1,32 @@
+{
+    "name": "lilyweight",
+    "version": "1.0.0",
+    "description": "Hypixel SkyBlock Weight Calculator",
+    "license": "MIT",
+    "homepage": "https://github.com/Antonio32A/lilyweight#readme",
+    "contributors": [
+        "Desco",
+        "LappySheep",
+        "Antonio32A <~@antonio32a.com> (https://antonio32a.com)"
+    ],
+    "keywords": [
+        "hypixel",
+        "skyblock",
+        "weight",
+        "lappysheep"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "test": "cd test && node ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Antonio32A/lilyweight.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Antonio32A/lilyweight/issues"
+    },
+    "devDependencies": {
+        "node-fetch": "^2.6.1"
+    }
+}
