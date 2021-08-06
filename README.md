@@ -75,3 +75,6 @@ Example output of one of the functions, in JSON, assuming that the second argume
     "slayer": 1103.6605685667157
 }
 ```
+
+## API
+If you aren't using JavaScript and you need an API, take a look at [lilyweight-worker](https://lilydocs.antonio32a.com/).
