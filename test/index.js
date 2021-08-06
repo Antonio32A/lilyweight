@@ -14,6 +14,7 @@ const parseData = data => {
 };
 
 lily.getWeight("e710ff36fe334c0e8401bda9d24fa121").then(parseData);
+lily.getWeight("e710ff36-fe33-4c0e-8401-bda9d24fa121").then(parseData);
 lily.getWeight("SirDesco").then(parseData);
 lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121").then(parseData);
 lily.getWeightFromUsername("SirDesco").then(parseData);
