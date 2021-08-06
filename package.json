@@ -1,6 +1,6 @@
 {
     "name": "lilyweight",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Hypixel SkyBlock Weight Calculator",
     "license": "MIT",
     "homepage": "https://github.com/Antonio32A/lilyweight#readme",
@@ -15,7 +15,7 @@
         "weight",
         "lappysheep"
     ],
-    "main": "index.js",
+    "main": "lib/index.js",
     "scripts": {
         "test": "cd test && node ."
     },
