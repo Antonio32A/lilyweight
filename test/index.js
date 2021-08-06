@@ -1,8 +1,8 @@
 const lily = require("../lib")(process.env.HYPIXEL_API_KEY);
 
 const parseData = data => {
-    const { uuid, total, skill, catacombs, slayer } = data;
-    console.log(`lilyweight for ${uuid}:`);
+    const { username, uuid, total, skill, catacombs, slayer } = data;
+    console.log(`lilyweight for ${username ?? uuid}:`);
     console.log("Total: " + total);
     console.log(`Skill: ${skill.base} (${skill.base + skill.overflow} overflow)`);
     console.log(
@@ -13,8 +13,9 @@ const parseData = data => {
     console.log("Slayer: " + slayer);
 };
 
-lily.getWeight("e710ff36fe334c0e8401bda9d24fa121").then(parseData);
-lily.getWeight("e710ff36-fe33-4c0e-8401-bda9d24fa121").then(parseData);
-lily.getWeight("SirDesco").then(parseData);
-lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121").then(parseData);
-lily.getWeightFromUsername("SirDesco").then(parseData);
+lily.getWeight("e710ff36fe334c0e8401bda9d24fa121", false).then(parseData);
+lily.getWeight("e710ff36-fe33-4c0e-8401-bda9d24fa121", true).then(parseData);
+lily.getWeight("SirDesco", true).then(parseData);
+lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121", true).then(parseData);
+lily.getWeightFromUsername("SirDesco", true).then(parseData);
+lily.getWeightFromUsername("LappySheep", true).then(parseData);
