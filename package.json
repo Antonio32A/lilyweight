@@ -1,6 +1,6 @@
 {
     "name": "lilyweight",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Hypixel SkyBlock Weight Calculator",
     "license": "MIT",
     "homepage": "https://github.com/Antonio32A/lilyweight#readme",
@@ -26,7 +26,7 @@
     "bugs": {
         "url": "https://github.com/Antonio32A/lilyweight/issues"
     },
-    "devDependencies": {
+    "dependencies": {
         "node-fetch": "^2.6.1"
     }
 }
