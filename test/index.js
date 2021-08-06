@@ -13,7 +13,7 @@ const parseData = data => {
     console.log("Slayer: " + slayer);
 };
 
-lily.getWeight("e710ff36fe334c0e8401bda9d24fa121", false).then(parseData);
+lily.getWeight("e710ff36fe334c0e8401bda9d24fa121").then(parseData);
 lily.getWeight("e710ff36-fe33-4c0e-8401-bda9d24fa121", true).then(parseData);
 lily.getWeight("SirDesco", true).then(parseData);
 lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121", true).then(parseData);
