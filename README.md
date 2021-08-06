@@ -30,6 +30,11 @@ lily.getWeight("e710ff36fe334c0e8401bda9d24fa121")
     .then(console.log)
     .catch(console.error);
 
+// using a UUID, but also return the player's username
+lily.getWeight("e710ff36fe334c0e8401bda9d24fa121", true)
+    .then(console.log)
+    .catch(console.error);
+
 // using a UUID with dashes
 lily.getWeight("e710ff36-fe33-4c0e-8401-bda9d24fa121")
     .then(console.log)
@@ -50,9 +55,10 @@ lily.getWeightFromUsername("SirDesco")
     .catch(console.error);
 ```
 
-Example output of one of the functions, in JSON:
+Example output of one of the functions, in JSON, assuming that the second argument (returnUsername) is true:
 ```json
 {
+    "username": "SirDesco",
     "uuid": "e710ff36fe334c0e8401bda9d24fa121",
     "total": 14439.880600696824,
     "skill": {
