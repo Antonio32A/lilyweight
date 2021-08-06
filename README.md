@@ -17,13 +17,13 @@ This requires a Hypixel API key. You may obtain one by logging onto `hypixel.net
 
 ## Credits
 - [LappySheep](https://github.com/LappySheep/) - Original author of the calculator
-- [Desco](https://github.com/Desco1) - Wrote most of the code.
+- [Desco](https://github.com/Desco1) - Ported the calculator to JavaScript.
 
 ## Usage
 
 ```js
 // replace HYPIXEL_API_KEY with your Hypixel API key
-const lily = require("../lib")("HYPIXEL_API_KEY");
+const lily = require("lilyweight")("HYPIXEL_API_KEY");
 
 // using a UUID
 lily.getWeight("e710ff36fe334c0e8401bda9d24fa121")
