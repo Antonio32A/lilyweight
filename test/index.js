@@ -13,9 +13,28 @@ const parseData = data => {
     console.log("Slayer: " + slayer);
 };
 
-lily.getWeight("e710ff36fe334c0e8401bda9d24fa121").then(parseData);
+lily.getWeight("sirdesco", true).then(console.log);
 lily.getWeight("e710ff36-fe33-4c0e-8401-bda9d24fa121", true).then(parseData);
 lily.getWeight("SirDesco", true).then(parseData);
 lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121", true).then(parseData);
 lily.getWeightFromUsername("SirDesco", true).then(parseData);
 lily.getWeightFromUsername("LappySheep", true).then(parseData);
+
+const raw = lily.getWeightRaw(
+    [60, 60, 60, 60, 60, 60, 60, 60],
+    [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+    ],
+    { "0": 10, "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 10, "7": 100 },
+    { "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 100 },
+    1000000,
+    [1000000, 1000000, 1000000, 1000000]
+);
+console.log(raw);

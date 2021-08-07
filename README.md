@@ -53,6 +53,26 @@ lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121")
 lily.getWeightFromUsername("SirDesco")
     .then(console.log)
     .catch(console.error);
+
+// get raw weight from raw data, read the JSDoc for more information
+// this does not return the uuid and username fields but it does not make any requests
+console.log(lily.getWeightRaw(
+    [60, 60, 60, 60, 60, 60, 60, 60], // skill levels which scale up to 60
+    [
+        1000000000, 
+        1000000000,
+        1000000000,
+        1000000000, // skill xp
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+    ],
+    { "0": 10, "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 10, "7": 100 }, // catacombs completion
+    { "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 100 }, // catacombs completion (master mode)
+    1000000, // catacombs experience
+    [1000000, 1000000, 1000000, 1000000] // slayer experience
+));
 ```
 
 Example output of one of the functions, in JSON, assuming that the second argument (returnUsername) is true:
