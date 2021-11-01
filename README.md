@@ -22,8 +22,10 @@ This requires a Hypixel API key. You may obtain one by logging onto `hypixel.net
 ## Usage
 
 ```js
+const LilyWeight = require("lilyweight");
+
 // replace HYPIXEL_API_KEY with your Hypixel API key
-const lily = require("lilyweight")("HYPIXEL_API_KEY");
+const lily = new LilyWeight("HYPIXEL_API_KEY");
 
 // using a UUID
 lily.getWeight("e710ff36fe334c0e8401bda9d24fa121")
@@ -56,7 +58,7 @@ lily.getWeightFromUsername("SirDesco")
 
 // get raw weight from raw data, read the JSDoc for more information
 // this does not return the uuid and username fields but it does not make any requests
-console.log(lily.getWeightRaw(
+console.log(LilyWeight.getWeightRaw(
     [60, 60, 60, 60, 60, 60, 60, 60], // skill levels which scale up to 60
     [
         1000000000, 
