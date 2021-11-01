@@ -21,7 +21,7 @@ lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121", true).then(parseData)
 lily.getWeightFromUsername("SirDesco", true).then(parseData);
 lily.getWeightFromUsername("LappySheep", true).then(parseData);
 
-const raw = lily.getWeightRaw(
+const raw = Lily.getWeightRaw(
     [60, 60, 60, 60, 60, 60, 60, 60],
     [
         1000000000,
@@ -39,22 +39,3 @@ const raw = lily.getWeightRaw(
     [1000000, 1000000, 1000000, 1000000]
 );
 console.log(raw);
-
-const staticRaw = Lily.getWeightRaw(
-    [60, 60, 60, 60, 60, 60, 60, 60],
-    [
-        1000000000,
-        1000000000,
-        1000000000,
-        1000000000,
-        1000000000,
-        1000000000,
-        1000000000,
-        1000000000
-    ],
-    { "0": 10, "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 10, "7": 100 },
-    { "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 100 },
-    1000000,
-    [1000000, 1000000, 1000000, 1000000]
-);
-console.log(staticRaw);
