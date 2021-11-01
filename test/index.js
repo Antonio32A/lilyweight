@@ -1,4 +1,5 @@
-const lily = require("../lib")(process.env.HYPIXEL_API_KEY);
+const Lily = require("../lib");
+const lily = Lily(process.env.HYPIXEL_API_KEY);
 
 const parseData = data => {
     const { username, uuid, total, skill, catacombs, slayer } = data;
@@ -38,3 +39,22 @@ const raw = lily.getWeightRaw(
     [1000000, 1000000, 1000000, 1000000]
 );
 console.log(raw);
+
+const staticRaw = Lily.getWeightRaw(
+    [60, 60, 60, 60, 60, 60, 60, 60],
+    [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+    ],
+    { "0": 10, "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 10, "7": 100 },
+    { "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 100 },
+    1000000,
+    [1000000, 1000000, 1000000, 1000000]
+);
+console.log(staticRaw);
