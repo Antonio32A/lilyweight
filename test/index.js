@@ -1,5 +1,5 @@
 const Lily = require("../lib");
-const lily = Lily(process.env.HYPIXEL_API_KEY);
+const lily = new Lily(process.env.HYPIXEL_API_KEY);
 
 const parseData = data => {
     const { username, uuid, total, skill, catacombs, slayer } = data;
