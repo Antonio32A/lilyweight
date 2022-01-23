@@ -1,3 +1,4 @@
+require('dotenv').config();
 const Lily = require("../lib");
 const lily = new Lily(process.env.HYPIXEL_API_KEY);
 
@@ -20,6 +21,8 @@ lily.getWeight("SirDesco", true).then(parseData);
 lily.getWeightFromUUID("e710ff36fe334c0e8401bda9d24fa121", true).then(parseData);
 lily.getWeightFromUsername("SirDesco", true).then(parseData);
 lily.getWeightFromUsername("LappySheep", true).then(parseData);
+lily.getProfileWeightFromUsername("Ascynx", "Mango", true).then(parseData);
+lily.getProfileWeightFromUuid("0ce87d5afa5f4619ae78872d9c5e07fe", "Mango", true).then(parseData);
 
 const raw = Lily.getWeightRaw(
     [60, 60, 60, 60, 60, 60, 60, 60],
