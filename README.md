@@ -60,6 +60,21 @@ lily.getWeightFromUsername("SirDesco")
     .then(console.log)
     .catch(console.error);
 
+// functions for if you wish to see a certain profile instead of the most recently used profile
+lily.getProfileWeight("Ascynx", "Mango")
+    .then(console.log)
+    .catch(console.error);
+
+// only Username
+lily.getProfileWeightFromUsername("Ascynx", "Mango")
+    .then(console.log)
+    .catch(console.error);
+
+// only UUID
+lily.getProfileWeightFromUUID("0ce87d5afa5f4619ae78872d9c5e07fe", "Mango")
+    .then(console.log)
+    .catch(console.error);
+
 // get raw weight from raw data, read the JSDoc for more information
 // this does not return the uuid and username fields but it does not make any requests
 console.log(LilyWeight.getWeightRaw(
