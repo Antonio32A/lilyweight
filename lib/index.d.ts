@@ -1,12 +1,12 @@
 declare module "lilyweight" {
     export type Weights = {total: number, slayer: number, skill: {overflow: number, base: number}, catacombs: {completion: {base: number, master: number}, experience: number}}
-    export type PlayerWeights = { uuid: string, username?: string, specifiedProfile?: string}
+    export type PlayerWeights = Weights & { uuid: string, username?: string, specifiedProfile?: string}
     class LilyWeight {
-        constructor(apiKey: string)
         /**
          * Creates a new LilyWeight instance.
          * @param {string} apiKey a Hypixel API key.
          */
+        constructor(apiKey: string)
         /**
          * Gets the player's raw weight. This makes no API requests.
          * Order of skills: enchanting, taming, alchemy, mining, farming, foraging, combat, fishing.
