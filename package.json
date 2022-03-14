@@ -16,6 +16,7 @@
         "lappysheep"
     ],
     "main": "lib/index.js",
+    "types": "./lib/index.d.ts",
     "scripts": {
         "test": "cd test && node ."
     },
