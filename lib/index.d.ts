@@ -1,8 +1,8 @@
 declare module "lilyweight" {
     export type Weights = {total: number, slayer: number, skill: {overflow: number, base: number}, catacombs: {completion: {base: number, master: number}, experience: number}}
     export type PlayerWeights = { uuid: string, username?: string, specifiedProfile?: string}
-    export class LilyWeight {
-        apiKey;
+    class LilyWeight {
+        constructor(apiKey: string)
         /**
          * Creates a new LilyWeight instance.
          * @param {string} apiKey a Hypixel API key.
