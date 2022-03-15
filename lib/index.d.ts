@@ -1,5 +1,5 @@
 declare module "lilyweight" {
-    
+
     export type Weights = {total: number, slayer: number, skill: {overflow: number, base: number}, catacombs: {completion: {base: number, master: number}, experience: number}}
     export type PlayerWeights = Weights & { uuid: string, username?: string, specifiedProfile?: string}
 
