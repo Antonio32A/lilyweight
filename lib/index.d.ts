@@ -45,7 +45,7 @@ declare module "lilyweight" {
          * @param  {boolean} [returnUsername=false] - Should the function return the username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getProfileWeightFromUUID (uuid: string, specifiedProfile: string, returnUsername: boolean): Promise<PlayerWeights>
+        getProfileWeightFromUUID(uuid: string, specifiedProfile: string, returnUsername: boolean): Promise<PlayerWeights>
 
         /**
          * Gets the player's weight.
