@@ -26,7 +26,7 @@ This requires a Hypixel API key. You may obtain one by logging onto `hypixel.net
 const LilyWeight = require("lilyweight");
 
 // or import from Ecmascript Module
-import LilyWeight from "lilyweight"; 
+import LilyWeight from "lilyweight";
 
 // replace HYPIXEL_API_KEY with your Hypixel API key
 const lily = new LilyWeight("HYPIXEL_API_KEY");
