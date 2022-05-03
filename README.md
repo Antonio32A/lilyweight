@@ -92,7 +92,7 @@ console.log(LilyWeight.getWeightRaw(
     { "0": 10, "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 10, "7": 100 }, // catacombs completion
     { "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 100 }, // catacombs completion (master mode)
     1000000, // catacombs experience
-    [1000000, 1000000, 1000000, 1000000] // slayer experience
+    [1000000, 1000000, 1000000, 1000000, 1000000] // slayer experience
 ));
 ```
 
