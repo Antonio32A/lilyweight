@@ -12,11 +12,11 @@ declare module "lilyweight" {
         /**
          * Gets the player's raw weight. This makes no API requests.
          * Order of skills: enchanting, taming, alchemy, mining, farming, foraging, combat, fishing.
-         * Order of slayers: zombie, spider, wolf, enderman.
+         * Order of slayers: zombie, spider, wolf, enderman, blaze.
          * @param {number[]} skillLevels - Array of skill levels in the order listed above. They all scale up to 60.
          * @param {number[]} skillXP - Array of skill XP in the order listed above.
          * @param {{"0": number, "1": number, "2": number, "3": number, "4": number, "5": number, "6": number, "7": number}} cataCompl - Object of catacombs completion, e.g. { "0": 13, "1": 37, "2": 32, ... }.
-         * @param {{"1": number, "2": number, "3": number, "4": number, "5": number, "6": number}} mCataCompl - Object of master catacombs completion, same format as cataCompl.
+         * @param {{"1": number, "2": number, "3": number, "4": number, "5": number, "6": number, "7": number}} mCataCompl - Object of master catacombs completion, same format as cataCompl.
          * @param {number} cataXP - Catacombs experience.
          * @param {number[]} slayerXP - Array of slayer experience amounts in the order listed above.
          * @returns {Weights} The weights calculated from the data.
@@ -25,7 +25,7 @@ declare module "lilyweight" {
             skillLevels: number[],
             skillXP: number[],
             cataCompl: {"0": number, "1": number, "2": number, "3": number, "4": number, "5": number, "6": number, "7": number},
-            mCataCompl: {"1": number, "2": number, "3": number, "4": number, "5": number, "6": number},
+            mCataCompl: {"1": number, "2": number, "3": number, "4": number, "5": number, "6": number, "7": number},
             cataXP: number,
             slayerXP: number[]
         ): Weights
