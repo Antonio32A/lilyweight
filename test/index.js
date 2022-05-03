@@ -12,6 +12,7 @@ const parseData = data => {
     );
     console.log("Catacombs Experience: " + catacombs.experience);
     console.log("Slayer: " + slayer);
+    console.log("======================");
 };
 
 lily.getWeight("sirdesco", true).then(console.log);
@@ -39,6 +40,6 @@ const raw = Lily.getWeightRaw(
     { "0": 10, "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 10, "7": 100 },
     { "1": 10, "2": 10, "3": 10, "4": 10, "5": 10, "6": 100 },
     1000000,
-    [1000000, 1000000, 1000000, 1000000]
+    [1000000, 1000000, 1000000, 1000000, 1000000]
 );
 console.log(raw);
