@@ -36,7 +36,7 @@ declare module "lilyweight" {
          * @param {boolean} [returnUsername=false] - Should the function return the player's username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getWeightFromUUID(uuid: string, returnUsername: boolean): Promise<PlayerWeights>
+        getWeightFromUUID(uuid: string, returnUsername: boolean = false): Promise<PlayerWeights>
 
         /**
          * Returns the specified profile's Weight.
@@ -45,7 +45,7 @@ declare module "lilyweight" {
          * @param  {boolean} [returnUsername=false] - Should the function return the username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getProfileWeightFromUUID(uuid: string, specifiedProfile: string, returnUsername: boolean): Promise<PlayerWeights>
+        getProfileWeightFromUUID(uuid: string, specifiedProfile: string, returnUsername: boolean = false): Promise<PlayerWeights>
 
         /**
          * Gets the player's weight.
@@ -53,7 +53,7 @@ declare module "lilyweight" {
          * @param {boolean} [returnUsername=false] - Should the function return the player's username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getWeightFromUsername(username: string, returnUsername: boolean): Promise<PlayerWeights>
+        getWeightFromUsername(username: string, returnUsername: boolean = false): Promise<PlayerWeights>
 
         /**
          * Gets the player profile's weight.
@@ -62,7 +62,7 @@ declare module "lilyweight" {
          * @param {boolean} [returnUsername=false] - Should the function return the player's username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getProfileWeightFromUsername(username: string, profile: string, returnUsername: boolean): Promise<PlayerWeights>
+        getProfileWeightFromUsername(username: string, profile: string, returnUsername: boolean = false): Promise<PlayerWeights>
 
         /**
          * Gets the player's weight.
@@ -70,7 +70,7 @@ declare module "lilyweight" {
          * @param {boolean} [returnUsername=false] - Should the function return the player's username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getWeight(player: string, returnUsername: boolean): Promise<PlayerWeights>
+        getWeight(player: string, returnUsername: boolean = false): Promise<PlayerWeights>
 
         /**
          * Gets the player profile's weight.
@@ -79,6 +79,6 @@ declare module "lilyweight" {
          * @param {boolean} [returnUsername=false] - Should the function return the player's username.
          * @returns {Promise<PlayerWeights>} The weights calculated for the player.
          */
-        getProfileWeight(player: string, profile: string, returnUsername: boolean): Promise<PlayerWeights>
+        getProfileWeight(player: string, profile: string, returnUsername: boolean = false): Promise<PlayerWeights>
     }
 }
